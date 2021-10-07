@@ -1,0 +1,232 @@
+/* CSS files add styling rules to your content */
+html {
+  height:100%;
+}
+
+body {
+  margin: 1em;
+  font-family: "Noto Sans", sans-serif;
+}
+h1,
+h2,
+h5,
+h6,
+.h1,
+.h2,
+.h5,
+.h6 {
+  font-family: "Fjalla One", sans-serif;
+  color: #ffff;
+}
+
+h3,
+h4,
+.h3,
+.h4 {
+  font-family: "Fjalla One", sans-serif;
+}
+
+.cover {
+  height: 600px;
+  background-color: #fff;
+  color: black;
+  background-position: center;
+  background-blend-mode: darken;
+}
+
+.cover1 {
+  height: 500px;
+  color: white;
+  background-position: center;
+  background-color: rgba(255, 255, 255, 1);
+  background-blend-mode: darken;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 100%;
+  webkit-background-size: cover;
+  moz-background-size: cover;
+  o-background-size: cover;
+  background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .carousel-item {
+    height: 280px;
+  }
+}
+header nav ul li a {
+  display: block;
+}
+
+@media screen and (min-width: 300px) and (max-width: 800px) {
+  body {
+    font-size: 0.8em;
+  }
+  sidebar {
+    display: none;
+  }
+}
+
+.card-background-cover {
+  min-height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  border: 0 !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card-content {
+  min-height: 220px;
+}
+.section-margin {
+  margin: 100px 0;
+}
+.bg-app-accent {
+  background-color: #7fbbca !important;
+}
+.bg-app-ink {
+  background-color: #2d3d8b !important;
+}
+.text-app-ink {
+  color: #2d3d8b !important;
+}
+
+.infinite-container {
+  overflow-y: scroll;
+}
+
+.infinite-container > div {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.infinite-container .product {
+  margin-right: 2em;
+}
+
+.infinite-container.slider .image-container {
+  min-width: 100%;
+  padding-top: 56.25%;
+  background-size: cover;
+  background-position: center;
+}
+.infinite-container.slider > div {
+  transform: translateX(0);
+  animation: slider 10s infinite;
+}
+
+.card.product {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+*
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+   border:3px solid white;
+   border-radius:22px;
+   background-color:#e3d193;
+   padding:9px;
+}
+
+/* Clear floats after the columns */
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.responsive-iframe {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+ #Iframe-Liason-Sheet {
+    max-width: 760px;
+    max-height: 1200px;
+    overflow: hidden;
+    }
+    /* inner wrapper: make responsive */
+    .responsive-wrapper {
+    position: relative;
+    height: 0; /* gets height from padding-bottom setting */
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    }
+    .responsive-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    }
+    /* padding-bottom = h/w as a % */
+    .responsive-wrapper-wxh-760x1200 {
+    padding-bottom: 363.6364%;
+    }
+    
+    .center-block-horiz {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    }
+
+.row {
+  margin: 0 !important;
+}
+
+.fas {
+  margin:3px;
+}
+
+.fb-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999999;
+  max-width: 700px;
+  min-width: 285px;
+}
+
+.container {
+  padding-top: 60px;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  background: #000;
+  background-size: cover;
+  color: white;
+}
